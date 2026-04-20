@@ -15,12 +15,12 @@ export const Route = createFileRoute("/projects/$slug")({
     return project;
   },
   head: ({ loaderData }) => {
-    if (!loaderData) return { meta: [{ title: "Project not found" }] };
+    if (!loaderData) return { meta: [{ title: "Proyek tidak ditemukan" }] };
     return {
       meta: [
-        { title: `${loaderData.title} — Baskara© Case Study` },
+        { title: `${loaderData.title} — Proyek Ira` },
         { name: "description", content: loaderData.overview },
-        { property: "og:title", content: `${loaderData.title} — Baskara©` },
+        { property: "og:title", content: `${loaderData.title} — Ira.` },
         { property: "og:description", content: loaderData.overview },
         { property: "og:image", content: loaderData.bannerImage },
         { name: "twitter:image", content: loaderData.bannerImage },
@@ -32,9 +32,9 @@ export const Route = createFileRoute("/projects/$slug")({
       <h1 className="font-black text-[#E0E0E0]" style={{ fontSize: "clamp(96px,20vw,200px)" }}>
         404
       </h1>
-      <p className="font-bold text-[28px] text-[#0D0D0D] mt-2">Project not found.</p>
+      <p className="font-bold text-[28px] text-[#0D0D0D] mt-2">Proyek tidak ditemukan.</p>
       <Link to="/" className="btn btn-primary mt-6">
-        ← Back to Home
+        ← Kembali ke beranda
       </Link>
     </div>
   ),
@@ -102,7 +102,7 @@ function ProjectDetail() {
           hash="projects"
           className="inline-flex items-center gap-2 pt-10 text-[14px] text-[#A0A0A0] hover:text-[#0D0D0D] transition-colors"
         >
-          <ArrowLeft size={16} /> Back to Projects
+          <ArrowLeft size={16} /> Kembali
         </Link>
 
         {/* Meta */}
@@ -137,7 +137,7 @@ function ProjectDetail() {
         <RevealOnScroll>
           <div className="pt-16">
             <h2 className="font-bold text-[32px] text-[#0D0D0D]" style={{ letterSpacing: "-0.02em" }}>
-              Project Overview
+              Gambaran Umum Proyek
             </h2>
             <p className="text-[16px] text-[#555555] max-w-[680px] mt-3 leading-[1.75]">
               {project.overview}
@@ -187,15 +187,7 @@ function ProjectDetail() {
         <RevealOnScroll>
           <div className="flex flex-wrap gap-3 mt-16 mb-24">
             <a href={project.liveUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
-              View Live Project ↗
-            </a>
-            <a
-              href={project.driveUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-outline-dark"
-            >
-              View on Drive
+              View Project ↗
             </a>
           </div>
         </RevealOnScroll>

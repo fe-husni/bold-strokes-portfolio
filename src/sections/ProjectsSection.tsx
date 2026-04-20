@@ -13,17 +13,11 @@ export function ProjectsSection() {
               className="font-black text-white uppercase leading-[0.95]"
               style={{ fontSize: "clamp(48px,8vw,96px)", letterSpacing: "-0.02em" }}
             >
-              My Best Projects
+              Proyek Saya
             </h2>
-            <p className="text-[14px] text-[#A0A0A0] max-w-[340px] mt-4">
-              Whether I'm creating a brand identity, designing a website, or developing marketing
-              materials, I strive to understand needs and deliver results that resonate.
+            <p className="text-[14px] text-[#A0A0A0] mt-4">
+            Baik dalam merancang sistem pengendalian banjir, menganalisis drainase perkotaan, atau mendesain infrastruktur pengairan, saya selalu berkomitmen untuk memahami kebutuhan teknis dan memberikan hasil yang presisi, aman, dan berkelanjutan.
             </p>
-          </RevealOnScroll>
-          <RevealOnScroll direction="right">
-            <a href="#contact" className="btn btn-outline-light">
-              See More Works →
-            </a>
           </RevealOnScroll>
         </div>
 

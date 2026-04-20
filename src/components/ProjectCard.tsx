@@ -6,7 +6,7 @@ import type { Project } from "@/data/projects";
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <motion.div
-      className="group bg-[#161616] border border-[#2A2A2A] rounded-2xl overflow-hidden transition-colors duration-300 hover:border-[#FFE500]"
+      className="group bg-[#161616] border border-[#2A2A2A] rounded-2xl overflow-hidden transition-colors duration-300 hover:border-[#FFE500] h-full"
     >
       <div className="overflow-hidden bg-[#2A2A2A] aspect-[4/3]">
         <motion.img
@@ -31,7 +31,7 @@ export function ProjectCard({ project }: { project: Project }) {
             <ArrowUpRight size={16} />
           </Link>
           <a
-            href={project.driveUrl}
+            href={project.liveUrl}
             target="_blank"
             rel="noreferrer"
             title="View on Drive"

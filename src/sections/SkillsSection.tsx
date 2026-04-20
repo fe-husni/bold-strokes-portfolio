@@ -1,16 +1,16 @@
-import { Layers, Search, Palette, MousePointer, Laptop, Brain } from "lucide-react";
+import { Dam, WavesArrowDown, Map, Building2, Laptop, Brain } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { StaggerContainer } from "@/components/ui/StaggerContainer";
 
 const features = [
-  { icon: Layers, title: "UI Design", desc: "With a strong background in UI design I create user-friendly solutions that meet user needs and enhance their experience." },
-  { icon: Search, title: "UX Research", desc: "With a strong background in UX research I create user-friendly solutions that meet user needs and enhance their experience." },
-  { icon: Palette, title: "Branding Design", desc: "With a strong background in branding I design user-friendly solutions that meet user needs and enhance their experience." },
-  { icon: MousePointer, title: "Interaction Design", desc: "With a strong background in interaction design I create solutions that meet user needs and enhance their experience." },
+  { icon: Dam, title: "Perencanaan Bangunan Air", desc: "Dengan keahlian dalam analisis hidraulik menggunakan HEC-RAS dan perencanaan sistem pengelolaan air, saya merancang solusi bangunan air yang efisien, aman, dan sesuai dengan kondisi lapangan untuk mengoptimalkan sumber daya air." },
+  { icon: WavesArrowDown, title: "Analisis Sistem Drainase", desc: "Menggunakan perangkat lunak modern seperti EPANET dan Delft3D, saya melakukan analisis komprehensif terhadap sistem jaringan pipa dan drainase perkotaan untuk memastikan distribusi air yang optimal." },
+  { icon: Building2, title: "Desain Infrastruktur Sipil", desc: "Dengan penguasaan AutoCAD, Civil 3D, dan Revit, saya menghasilkan desain teknis infrastruktur sipil yang presisi, mulai dari detail bangunan pengairan hingga gambar kerja proyek konstruksi." },
+  { icon: Map, title: "Survey & Pemetaan", desc: "Menggunakan ArcGIS dan Global Mapper, saya melakukan pengolahan data spasial, pemetaan topografi, dan analisis geografis untuk mendukung perencanaan proyek infrastruktur yang akurat." },
 ];
 
-const hardSkills = ["UI Design", "UX Research", "Figma", "HTML & CSS", "JavaScript", "React.js", "Tailwind CSS", "Node.js", "Git & GitHub", "Adobe Illustrator", "Branding Design", "Interaction Design"];
-const softSkills = ["Problem Solving", "Communication", "Teamwork", "Adaptability", "Time Management", "Critical Thinking", "Creativity", "Leadership", "Attention to Detail"];
+const hardSkills = ["ArcGIS", "AutoCAD", "Civil 3D", "Revit", "Global Mapper", "HEC-RAS", "EPANET", "GeoStudio", "Delft3D", "Figma", "Canva"];
+const softSkills = ["Problem Solving", "Komunikasi Efektif", "Kerja Sama Tim", "Adaptabilitas", "Manajemen Waktu", "Berpikir Kritis", "Kreativitas",  "Kepemimpinan", "Attention to Detail"];
 
 export function SkillsSection() {
   return (
@@ -18,18 +18,17 @@ export function SkillsSection() {
       <div className="container-x">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-end">
           <RevealOnScroll>
-            <p className="eyebrow">Our Features</p>
+            <p className="eyebrow">Layanan Kami</p>
             <h2
               className="font-bold text-[#0D0D0D] mt-3"
               style={{ fontSize: "clamp(28px,4vw,44px)", letterSpacing: "-0.02em" }}
             >
-              I Have Expertise to Tackle Challenges
+              Keahlian Teknis untuk Menyelesaikan Tantangan Bangunan Air & Infrastruktur
             </h2>
           </RevealOnScroll>
           <RevealOnScroll direction="right">
             <p className="text-[15px] text-[#555555] max-w-[380px]">
-              With experience in my field, I can handle challenges and provide solutions. My
-              skills enhance my problem-solving and make me a valuable asset to any team.
+              Dengan fondasi kuat di bidang teknik sipil dan spesialisasi bangunan air, saya mampu menghadapi tantangan teknis kompleks mulai dari analisis hidraulik, perencanaan pengendalian banjir, hingga desain sistem drainase perkotaan. Keahlian saya menjadi aset berharga untuk setiap proyek infrastruktur.
             </p>
           </RevealOnScroll>
         </div>

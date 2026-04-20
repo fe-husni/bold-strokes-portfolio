@@ -24,165 +24,84 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "clandestine",
-    title: "Clandestine",
-    category: "Digital Banking · Website",
-    client: "Clandestine Inc.",
+    slug: "perencanaan-dan-penanggulangan-banjir-bengawan-solo",
+    title: "Perencanaan & Penanggulangan Banjir Sungai Bengawan Solo di Desa Sembayat & Bungah, Kab. Gresik",
+    category: "Bangunan Air · Album Gambar",
+    client: "PT. Raya Karya Consulting & Engineering.",
     year: "2024",
-    role: "UI/UX Designer & Front-End Developer",
-    coverImage: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=80",
+    role: "Drafter & Perencana Teknis",
+    coverImage: "/img/Bengawan.png",
+    bannerImage: "/img/Bengawan.png",
     driveUrl: "#",
-    liveUrl: "#",
-    tags: ["Fintech", "Web App", "UI/UX", "React"],
+    liveUrl: "https://drive.google.com/file/d/1PEOAnQ1tU_GD3CWVCcITLlC_7Kl8BDzR/view?usp=sharing",
+    tags: ["Bangunan Air", "Hidrologi", "AutoCAD", "Kolam Retensi", "Sheet Pile"],
     overview:
-      "A modern digital banking platform designed for young professionals who demand clarity, speed, and trust in every financial interaction.",
+      "Proyek terintegrasi ini memodelkan perencanaan penanggulangan banjir di Sungai Bengawan Solo yang melintasi Desa Sembayat dan Bungah, Kecamatan Sembayat dan Bungah, Kabupaten Gresik. Fokus utama proyek meliputi pembangunan kolam retensi untuk menampung air hujan, perbaikan struktur sheet pile untuk perkuatan tebing sungai, serta perencanaan bangunan rumah pompa sebagai sistem pengendalian debit aliran. Sebagai drafter dalam tim proyek, saya bertanggung jawab dalam penyusunan gambar teknik, perhitungan hidrolika, dan pemetaan lokasi menggunakan data survei lapangan dengan skala 1:2000.",
     objective:
-      "Clandestine needed a modern digital banking platform that would make financial management intuitive and accessible for young professionals. The core challenge was designing a trustworthy, secure-feeling interface that simplifies complex financial tasks — from multi-currency transactions to investment tracking — without overwhelming users with data density.",
+      "Sungai Bengawan Solo memerlukan solusi penanggulangan banjir yang komprehensif untuk melindungi pemukiman warga di Desa Sembayat dan Bungah. Tantangan utama adalah merancang sistem kolam retensi yang efektif, struktur sheet pile yang kuat untuk menahan tekanan air, serta rumah pompa dengan kapasitas optimal — semuanya harus terintegrasi dengan kondisi topografi existing dan mempertimbangkan faktor keamanan jangka panjang.",
     method: {
       description:
-        "The process began with a 2-week competitive analysis of 8 existing banking apps, followed by 12 user interviews to map pain points. Wireframes were built in Figma and tested with 15 real users across 2 iteration rounds. A detailed component library and design token documentation were produced for developer handoff.",
-      tools: ["Figma", "FigJam", "React", "Tailwind CSS", "Framer Motion", "REST API", "Hotjar"],
+        "Proses dimulai dengan survei lapangan dan pengumpulan data hidrologi Sungai Bengawan Solo. Dilanjutkan dengan analisis debit banjir menggunakan perhitungan empiris, perencanaan geometri kolam retensi dengan kapasitas tampungan yang sesuai, desain struktur sheet pile untuk perkuatan tebing, dan perhitungan spesifikasi rumah pompa. Seluruh gambar teknik disusun dalam format album gambar proyek dengan 31 lembar dokumentasi, meliputi peta lokasi, detail struktur, dan legenda teknis lengkap.",
+      tools: ["AutoCAD", "Survei Topografi", "Perhitungan Hidrolika", "Album Gambar Proyek"],
     },
     result: {
       description:
-        "The redesigned platform launched to strong positive reception. Onboarding drop-off reduced by over a third, and users reported significantly higher confidence completing financial transactions independently. The project was delivered on time and became an internal reference design.",
-      metrics: ["38% faster onboarding", "4.8 / 5 user rating", "2× task completion rate", "↓ 34% support tickets"],
+        "Album gambar proyek berhasil disusun dengan 31 lembar dokumentasi teknis yang mencakup peta lokasi skala 1:2000, detail kolam retensi, struktur sheet pile, rumah pompa, dan legenda lengkap. Dokumentasi ini menjadi referensi teknis untuk implementasi konstruksi penanggulangan banjir di lapangan.",
+      metrics: ["31 Lembar Album Gambar", "1:2000 Skala Peta", "2 Desa Area Cakupan", "3 Struktur Utama Kolam Retensi, Sheet Pile, Rumah Pompa"],
     },
   },
   {
-    slug: "bola-io",
-    title: "Bola.io",
-    category: "AI Platform · Calendar",
-    client: "Bola Technologies",
+    slug: "bim",
+    title: "Penugasan BIM: Model 3D Sekolah",
+    category: "BIM · 3D MODELING · REVIT",
+    client: "Proyek Akademik ITS",
+    year: "2025",
+    role: "BIM Modeler",
+    coverImage: "/img/bim.jpg",
+    bannerImage: "/img/bim.jpg",
+    driveUrl: "#",
+    liveUrl: "https://drive.google.com/drive/folders/1c1ZcNjyEJmXX5LncQKzzjTh-QUPjY2rH?usp=drive_link",
+    tags: ["BIM", "Revit", "3D Modeling", "Teknik Sipil"],
+    overview:
+      "Penugasan Building Information Modeling (BIM) ini merupakan proyek pembuatan model 3D bangunan sekolah menggunakan Autodesk Revit. Proyek ini bertujuan untuk mengaplikasikan kemampuan pemodelan informasi bangunan dalam format 3D view, termasuk struktur bangunan, elevasi, dan detail konstruksi.",
+    objective:
+      "Mengembangkan keterampilan pemodelan BIM menggunakan Autodesk Revit untuk menghasilkan representasi digital bangunan sekolah yang akurat. Fokus pada pemahaman tools Revit, pembuatan family components, pengaturan elevasi, dan visualisasi 3D yang siap untuk dokumentasi teknis maupun presentasi proyek.",
+    method: {
+      description:
+        "Proses pemodelan dimulai dari setup project dengan template structural, pembuatan grid dan level bangunan, penempatan structural components (column, beam, floor), hingga penambahan arsitektural elements seperti wall, door, window, roof, dan railing. Setiap komponen diberikan properties sesuai spesifikasi material dan dimensi aktual. Model dikembangkan dalam berbagai view: 3D View, Floor Plans, Elevations (North, South, East, West), serta Section Views untuk memastikan kelengkapan dokumentasi dari semua sudut pandang teknis.",
+      tools: ["Autodesk Revit", "Structural Modeling", "3D View Configuration", "Family Components"],
+    },
+    result: {
+      description:
+        "Model 3D sekolah berhasil diselesaikan dengan tampilan 3D View yang komprehensif, meliputi struktur lengkap dengan elevasi yang terintegrasi. Model ini mencakup detail arsitektural dan structural yang dapat digunakan untuk analisis lebih lanjut, estimasi material, atau presentasi proyek konstruksi.",
+      metrics: ["100% Model 3D Complete", "4 Views", "Structural & Architectural Integration"],
+    },
+  },
+  {
+    slug: "photogearhub",
+    title: "PhotoGearHub - Platform Penyewaan Alat Fotografi",
+    category: "WIRAUSAHA · IYT 2024",
+    client: "-",
     year: "2024",
-    role: "Product Designer",
-    coverImage: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1400&q=80",
+    role: "CFO (Chief Financial Officer)",
+    coverImage: "/img/photogearhub.png",
+    bannerImage: "/img/photogearhub.png",
     driveUrl: "#",
-    liveUrl: "#",
-    tags: ["AI", "SaaS", "Productivity", "Web App"],
+    liveUrl: "https://www.instagram.com/photogearhubb?igsh=b3EyMjk5ZmgycWkw",
+    tags: ["Photography", "IYT 2024", "Kewirausahaan"],
     overview:
-      "An AI-powered scheduling assistant that learns from your behavior to auto-organize meetings, tasks, and deadlines — with a calm, human interface.",
+      "PhotoGearHub adalah platform penyewaan alat fotografi yang dikembangkan dalam program inkubasi bisnis tahunan Institut Teknologi Sepuluh Nopember (ITS) — ITS Youth Technopreneur (IYT) 2024. Platform ini memfasilitasi mahasiswa dan komunitas fotografi untuk menyewa peralatan kamera dengan mudah, aman, dan terjangkau.",
     objective:
-      "Bola.io needed to build an AI-powered scheduling assistant that learns from user behavior and auto-organizes meetings, tasks, and deadlines. The challenge was making an intelligent, data-heavy product feel simple, calm, and human — not cold or robotic — especially when the AI is actively processing or surfacing suggestions.",
+      "Menciptakan solusi penyewaan alat fotografi yang accessible bagi mahasiswa ITS dan komunitas kreator, mengurangi hambatan finansial dalam memperoleh peralatan berkualitas, serta membangun ekosistem kolaboratif bagi para fotografer pemula maupun profesional di lingkungan kampus.",
     method: {
       description:
-        "Conducted a 3-week discovery phase with product stakeholders and 8 beta users. Created a modular design system in Figma to handle the product's many UI states (empty, loading, AI-thinking, conflict-detected). Prototyped the AI suggestion flow and tested calendar conflict-resolution scenarios with 5 scheduler personas. Motion design for AI micro-interactions was defined using Principle.",
-      tools: ["Figma", "Principle", "Notion", "OpenAI API", "Next.js", "TypeScript", "Supabase"],
+        "Diawali dengan riset kebutuhan mahasiswa terhadap akses peralatan fotografi, dilanjutkan dengan pengembangan platform digital melalui website photogearhub.my.id. Strategi pemasaran dilakukan melalui media sosial Instagram dengan konten visual yang menarik, sistem pemesanan yang streamlined, dan layanan customer service responsif. Program ini dibina oleh @kewirausahaan_its dan @its_campus dengan dukungan mentoring bisnis dan teknologi secara berkala.",
+      tools: ["Instagram Marketing", "Linktree Integration"],
     },
     result: {
       description:
-        "Beta users reduced time spent on manual scheduling by more than half. The AI suggestion acceptance rate hit 71% within the first month of release, validating the core product hypothesis. The design system enabled the dev team to ship 40% faster than the previous sprint cycle.",
-      metrics: ["71% AI suggestion acceptance", "52% less scheduling time", "900+ beta signups", "40% faster dev sprint"],
-    },
-  },
-  {
-    slug: "tani-smart",
-    title: "Tani Smart",
-    category: "AgriTech · Mobile App",
-    client: "Capstone — Ministry of Agriculture (ID)",
-    year: "2023",
-    role: "UI/UX Designer",
-    coverImage: "https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?w=800&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=1400&q=80",
-    driveUrl: "#",
-    liveUrl: "#",
-    tags: ["Mobile", "Android", "AgriTech", "Social Impact"],
-    overview:
-      "A mobile app bridging the digital gap for Indonesian smallholder farmers — accessible, offline-capable, and built for entry-level Android devices.",
-    objective:
-      "Indonesian smallholder farmers face persistent challenges accessing timely information on weather, crop pricing, and fertilizer subsidies. Tani Smart aimed to bridge this digital divide with a mobile app that is accessible, offline-capable, and usable even on low-end Android devices — all while serving users with limited digital literacy.",
-    method: {
-      description:
-        "Field research was conducted across 2 villages in East Java over 10 days, observing farmers firsthand and running facilitated interviews via local translators. Low-fidelity paper prototypes were tested on-site before digital wireframes were produced. The UI was built around icon-first navigation, large touch targets (min 48x48dp), and 2G-compatible asset sizes. All screens validated against WCAG AA contrast ratios.",
-      tools: ["Figma", "FigJam", "Android Studio", "Firebase", "Google Maps API", "Optimal Workshop"],
-    },
-    result: {
-      description:
-        "Pilot testing across 3 villages showed strong adoption among farmers aged 40–60, a demographic rarely reached by digital products. Local agricultural officers reported a meaningful reduction in time spent answering routine subsidy and pricing inquiries, now handled directly through the app.",
-      metrics: ["87% task success in pilot", "3 villages onboarded", "Works on 2G network", "Age 40–60 primary users"],
-    },
-  },
-  {
-    slug: "luminare",
-    title: "Luminare",
-    category: "Creative Agency · Website",
-    client: "Luminare Studio",
-    year: "2023",
-    role: "UI Designer & Brand Designer",
-    coverImage: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=800&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=1400&q=80",
-    driveUrl: "#",
-    liveUrl: "#",
-    tags: ["Branding", "Webflow", "Motion", "Website"],
-    overview:
-      "A full brand and website rebuild for a premium creative agency — built to convert visitors into high-value clients through bold design and motion-first experience.",
-    objective:
-      "Luminare Studio's existing website felt generic and failed to convert visitors into project leads. The studio needed a site communicating their core values — bold, premium, and future-focused — while functioning as both a portfolio showcase and a lead-generation engine. The visual identity also required a refresh to match their repositioned market tier.",
-    method: {
-      description:
-        "Started with a brand audit and competitor analysis of 12 agencies at a similar tier. Rebuilt the visual identity: refined color palette, new typography pair, and a motion-first design approach. Designed 12 page templates in Figma, reviewed in hi-fi prototype form with the client. Final implementation done in Webflow with GSAP for page transitions and scroll-triggered animations, in collaboration with a Webflow developer.",
-      tools: ["Figma", "Webflow", "GSAP", "Adobe Fonts", "Hotjar", "Google Analytics 4"],
-    },
-    result: {
-      description:
-        "The new site launched to immediate positive feedback. Organic traffic and inbound project inquiries grew substantially in the first quarter post-launch. The redesigned identity was later extended to pitch decks and social media templates. The site was featured in Webflow's official showcase.",
-      metrics: ["3× more inbound leads", "Avg. session: 4min 22s", "Bounce rate ↓ 74% → 41%", "Featured in Webflow Showcase"],
-    },
-  },
-  {
-    slug: "sumbang",
-    title: "Sumbang",
-    category: "Social Impact · Donation App",
-    client: "NGO Collaboration — Capstone Project",
-    year: "2023",
-    role: "Lead UI/UX Designer",
-    coverImage: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1400&q=80",
-    driveUrl: "#",
-    liveUrl: "#",
-    tags: ["Mobile", "Social Impact", "React Native", "NGO"],
-    overview:
-      "A transparent, community-driven donation platform for Indonesian NGOs — making every rupiah traceable from payment to on-ground impact.",
-    objective:
-      "Sumbang was created to rebuild donor trust in Indonesian NGOs, which suffer from a widespread perception of opaque fund management. The app needed to make every donation fully traceable — from payment confirmation, to fund allocation, to on-ground impact reporting — using radical transparency as its core design principle.",
-    method: {
-      description:
-        "Ran a 5-day design sprint with NGO stakeholders and potential donors. Mapped the full donation journey and identified 3 critical trust moments: payment confirmation, fund tracking, and impact reporting. Each was redesigned with maximum transparency: real-time fund breakdowns, photo-verified impact updates, and blockchain-anchored receipts. Usability tested with 20 participants across 2 rounds.",
-      tools: ["Figma", "Maze", "React Native", "Expo", "Node.js", "MongoDB", "Midtrans API"],
-    },
-    result: {
-      description:
-        "Pilot NGOs reported a notable increase in donor retention compared to their previous platforms. New donors cited the transparency features as the primary reason for their donation decision. The app was shortlisted for a national student innovation award.",
-      metrics: ["↑ 61% donor retention", "4.9 / 5 trust score", "12 NGOs onboarded", "National award shortlist"],
-    },
-  },
-  {
-    slug: "buildingblocks",
-    title: "BuildingBlocks",
-    category: "Real Estate · Website",
-    client: "BuildingBlocks Property",
-    year: "2022",
-    role: "UI/UX Designer & Front-End Developer",
-    coverImage: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
-    bannerImage: "https://images.unsplash.com/photo-1582407947304-fd86f28f7b95?w=1400&q=80",
-    driveUrl: "#",
-    liveUrl: "#",
-    tags: ["Real Estate", "Website", "React", "Property Search"],
-    overview:
-      "A property discovery and listing platform that makes finding your dream home as effortless and visual as scrolling through social media.",
-    objective:
-      "BuildingBlocks needed to move away from a legacy listing portal that felt outdated and difficult to navigate on mobile. The goal was to design a modern, social-media-inspired property discovery experience — where browsing homes feels effortless, visually rich, and trustworthy — driving both buyer inquiries and agent sign-ups.",
-    method: {
-      description:
-        "Began with a thorough UX audit of the existing portal, identifying 9 critical drop-off points in the property search flow. Designed a card-based discovery UI inspired by social media scrolling patterns, with high-quality photo-first listings, map integration, and saved-search functionality. Conducted A/B testing on the listing card layout with 200 users before finalizing the design direction.",
-      tools: ["Figma", "React", "Tailwind CSS", "Google Maps API", "Algolia Search", "Vercel"],
-    },
-    result: {
-      description:
-        "Post-launch data showed a dramatic improvement in mobile engagement. Users browsed significantly more listings per session and inquiry form submissions increased substantially. The platform was adopted as the company's primary customer-facing product within 3 months of launch.",
-      metrics: ["↑ 85% mobile engagement", "3.2× more listings viewed", "↑ 44% inquiry submissions", "Adopted as primary platform"],
+        "Platform berhasil diluncurkan secara official dengan website aktif photogearhub.my.id dan akun Instagram @photogearhubb yang mengelola 24+ postingan dengan 35 followers aktif. PhotoGearHub menjadi salah satu startup yang lolos program inkubasi IYT 2024, membuka peluang kolaborasi dengan komunitas fotografi kampus.",
+      metrics: ["24+ Postingan Instagram", "IYT 2024 Program Inkubasi (Pendanaan)", "Officially Launched Platform Aktif"],
     },
   },
 ];

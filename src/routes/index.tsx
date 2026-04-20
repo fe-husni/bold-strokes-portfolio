@@ -6,23 +6,21 @@ import { HeroSection } from "@/sections/HeroSection";
 import { AboutSection } from "@/sections/AboutSection";
 import { SkillsSection } from "@/sections/SkillsSection";
 import { ProjectsSection } from "@/sections/ProjectsSection";
-import { TestimonialsSection } from "@/sections/TestimonialsSection";
-import { FAQSection } from "@/sections/FAQSection";
 import { ContactSection } from "@/sections/ContactSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Baskara© — Designer & Front-End Developer Portfolio" },
+      { title: "Ira. — Civil Engineering Portfolio" },
       {
         name: "description",
         content:
-          "Baskara is a UI/UX designer and front-end developer crafting bold, editorial digital experiences for ambitious brands and startups.",
+          "Mengubah tantangan air menjadi solusi infrastruktur yang berkelanjutan untuk Indonesia yang lebih baik.",
       },
-      { property: "og:title", content: "Baskara© — Designer Portfolio" },
+      { property: "og:title", content: "Ira. — Civil Engineering" },
       {
         property: "og:description",
-        content: "Bold editorial portfolio of a designer & front-end developer.",
+        content: "Mengubah tantangan air menjadi solusi infrastruktur yang berkelanjutan untuk Indonesia yang lebih baik.",
       },
     ],
   }),
@@ -43,8 +41,6 @@ function Index() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <TestimonialsSection />
-        <FAQSection />
         <ContactSection />
       </main>
       <Footer />

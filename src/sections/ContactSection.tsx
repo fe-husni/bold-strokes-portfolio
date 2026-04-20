@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { Mail, Linkedin, Instagram, MessageCircle } from "lucide-react";
+import { Mail, Instagram, MessageCircle } from "lucide-react";
 import { StaggerContainer } from "@/components/ui/StaggerContainer";
 
 const cards = [
-  { icon: Mail, label: "Email", value: "hello@baskara.com", href: "mailto:hello@baskara.com" },
-  { icon: Linkedin, label: "LinkedIn", value: "linkedin.com/in/baskara", href: "https://linkedin.com" },
-  { icon: Instagram, label: "Instagram", value: "@baskara", href: "https://instagram.com" },
-  { icon: MessageCircle, label: "WhatsApp", value: "+62 812-XXXX-XXXX", href: "https://wa.me/62812" },
+  { icon: Mail, label: "Email", value: "ira210622@gmail.com", href: "mailto:ira210622@gmail.com" },
+  { icon: Instagram, label: "Instagram", value: "@irstyn449", href: "https://www.instagram.com/irstyn449/" },
+  { icon: MessageCircle, label: "WhatsApp", value: "+62 856 - 0898 - 7596", href: "https://wa.me/6285608987596" },
 ];
 
 export function ContactSection() {
@@ -19,19 +18,10 @@ export function ContactSection() {
           className="font-black text-[#0D0D0D] max-w-[640px] mx-auto leading-[1.05]"
           style={{ fontSize: "clamp(36px,5vw,64px)", letterSpacing: "-0.02em" }}
         >
-          Let's Whip Up Something Fun!
+          Ayo Wujudkan Proyek Impian Anda!
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-3 mt-8">
-          <a href="mailto:hello@baskara.com" className="btn btn-primary">
-            Get Started
-          </a>
-          <button onClick={scrollAbout} className="btn btn-outline-dark">
-            Learn More
-          </button>
-        </div>
-
-        <StaggerContainer className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-12 text-left">
+        <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12 text-left">
           {cards.map((c) => {
             const Icon = c.icon;
             return (
